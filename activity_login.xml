@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    tools:context="com.example.abhishek.myapplication.Login"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_grey"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/Theme_grey"
+  >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/TextLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="15dp"
+        android:textSize="45sp"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/TextColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/Emailid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/email_id"
+        android:textStyle="bold"
+        android:layout_below="@+id/TextLogo"
+        android:textColor="@color/TextColor"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF313030"
+        android:textColorHighlight="@color/TextColor"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/Emailid1"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:includeFontPadding="true"
+        android:background="#FF898484"
+        />
+    <TextView
+
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/password"
+        android:textStyle="bold"
+        android:textColor="@color/TextColor"
+        android:layout_below="@+id/email_input"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="49dp"
+        />
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF313030"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:background="#FF898484"
+        />
+    <Button
+
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_input"
+        android:background="@color/colorAccenta"
+        android:padding="7dp"
+        android:text="@string/Login"
+        android:textSize="19sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="130dp"
+
+        />
+    <TextView
+        android:onClick="CreateId"
+        android:id="@+id/create_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/CreateAccount"
+        android:textColor="@color/TextColor"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="60dp"
+        />
+    </LinearLayout>
+    </RelativeLayout>
+  </ScrollView>
+
+
+

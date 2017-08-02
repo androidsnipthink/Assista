@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.abhishek.myapplication.SignupCon"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/Theme_grey"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Theme_grey"
+    >
+
+    <LinearLayout
+        android:id="@+id/li"
+        android:orientation="vertical"
+        android:background="@color/Theme_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/gender_radio_button"
+        android:gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Theme_grey"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="24dp"
+       >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="#FFFFFFFF"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:text="@string/male"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textColorHighlight="@color/buttonColor"
+            android:textColorHint="@color/buttonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+       <RadioButton
+            android:text="@string/female"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:text="@string/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/birth"
+        android:text="@string/date_of_birth"
+        android:background="@color/Theme_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="45dp"
+        android:textColor="@color/TextColor"
+        />
+
+    <DatePicker
+         android:id="@+id/dop"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@color/Theme_grey"
+         android:calendarViewShown="false"
+         android:scaleX=".7"
+         android:scaleY=".6"
+         android:layout_marginStart="5dp"
+         android:layout_marginLeft="2dp"
+         android:layout_marginTop="20dp"
+         >
+         </DatePicker>
+
+        <Button
+            android:id="@+id/create_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:background="@color/colorAccenta"
+            android:textColor="@color/TextColor"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
